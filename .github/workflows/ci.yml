@@ -25,16 +25,16 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
 
       # Runs a single command using the runners shell
-      #- name: Build and Deploy
-      #  run: JamesIves/github-pages-deploy-action@master
-      #  env: 
-      #    ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #    BRANCH: main
-      #    FOLDER: build
-      #    BUILD_SCRIPT: npm install && npm run build
+      - name: Build and Deploy
+        run: JamesIves/github-pages-deploy-action@master
+        env: 
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: main
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run build
 
       - name: wechat-work robot message
         uses: fifsky/wechat-work-action@master

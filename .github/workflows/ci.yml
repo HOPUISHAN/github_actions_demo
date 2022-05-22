@@ -28,13 +28,13 @@ jobs:
       - uses: actions/checkout@master
 
       # Runs a single command using the runners shell
-      - name: Build and Deploy
-        run: JamesIves/github-pages-deploy-action@master
-        env: 
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: main
-          FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
+      #- name: Build and Deploy
+      #  run: JamesIves/github-pages-deploy-action@master
+      #  env: 
+      #    ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      #    BRANCH: main
+      #    FOLDER: build
+      #    BUILD_SCRIPT: npm install && npm run build
 
       - name: wechat-work robot message
         uses: fifsky/wechat-work-action@master

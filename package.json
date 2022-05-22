@@ -1,5 +1,6 @@
 {
   "name": "github_actions_demo",
+  "homepage": "https://HOPUISHAN.github.io/github_actions_demo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
